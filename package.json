@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha ./test/* --exit",
     "dev": "nodemon app.js",
     "start": "node app.js"
   },
@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/ralph-the-badger/heroku-cd-node#readme",
   "devDependencies": {
-    "nodemon": "^2.0.18"
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.18",
+    "supertest": "^6.2.3"
   },
   "dependencies": {
     "dotenv": "^16.0.1",
